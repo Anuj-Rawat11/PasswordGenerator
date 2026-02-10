@@ -6,10 +6,11 @@ function App() {
 const [rangevalue,setrangevalue]=useState(10);
 const [numcheck,setnumcheck]=useState(false);
 const [charcheck,setcharcheck]=useState(false);
+const [password,setpassword]=useState("");
   return (
     <div className="App">
       <div className="passapp">
-        <h1>Password:</h1>
+        <h1>Password:{password}</h1>
         <label>Select Length : </label>
         <input type="range" min="5" max="30" value={rangevalue} onChange={(e)=>setrangevalue(e.target.value)} />
         <span>{rangevalue}</span>
